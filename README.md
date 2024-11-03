@@ -7,6 +7,7 @@ Este repositório contém uma API para um sistema escolar, desenvolvida com Djan
 - **Django** 5.1.2
 - **Django REST Framework** 3.15.2
 - **asgiref** 3.8.1
+- **django-cors-headers** 4.6.0 (para permitir CORS)
 - **django-filter** 24.3
 - **drf-yasg** 1.21.8 (para documentação da API)
 - **Faker** 30.8.2
