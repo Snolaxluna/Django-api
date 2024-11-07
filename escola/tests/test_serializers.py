@@ -1,15 +1,15 @@
 from django.test import TestCase
-from escola.models import Estudante, Matricula, Curso
-from escola.serializers import EstudanteSerializer, MatriculaSerializer, CursoSerializer
+from escola.models import Estudante, Curso, Matricula
+from escola.serializers import EstudanteSerializer, CursoSerializer, MatriculaSerializer
 
 
 class SerializerEstudanteTestCase(TestCase):
     def setUp(self):
         self.estudante = Estudante(
-            nome='Teste Modelo Matricula',
-            email='testemodelomatricula@gmail.com',
-            cpf='91546870040',
-            data_nascimento='2003-02-02',
+            nome='Teste de Modelo',
+            email='testedemodelo@gmail.com',
+            cpf='68195899056',
+            data_nascimento='2023-02-02',
             celular='86 99999-9999'
         )
         self.serializer_estudante = EstudanteSerializer(
